@@ -1,0 +1,25 @@
+# Ignore Python virtual environments
+.venv/
+venv/
+
+# Ignore Git and DVC
+.git/
+.gitignore
+.dvc/
+.dvcignore
+.dvc/cache/
+
+# Ignore Python cache and logs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+logs/
+*.log
+
+# Ignore notebook junk
+*.ipynb_checkpoints
+
+# Ignore data files (if not needed in Docker image)
+data/
+datasets/
