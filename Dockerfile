@@ -22,6 +22,8 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies from requirements.txt
+RUN pip install --upgrade pip setuptools wheel
+
 RUN pip install --no-cache-dir -e .
 
 # Train the model before running the application
